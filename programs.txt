@@ -1,0 +1,5 @@
+1. m1,m2,......, m5. Print the results. Pass or Fail. Total. Average. Percentage.
+2. Size of all datatypes 
+3. Multiplication table
+4. Switch days of week and months of year
+
