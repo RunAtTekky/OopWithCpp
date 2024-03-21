@@ -1,20 +1,21 @@
 #include <iostream>
+using namespace std;
 
 class OuterClass {
 public:
     OuterClass() {
-        std::cout << "OuterClass constructor" << std::endl;
+        cout << "OuterClass constructor" << std::endl;
     }
 
     // Inner class declaration
     class InnerClass {
     public:
         InnerClass() {
-            std::cout << "InnerClass constructor" << std::endl;
+            cout << "InnerClass constructor" << std::endl;
         }
 
         void innerMethod() {
-            std::cout << "InnerClass method" << std::endl;
+            cout << "InnerClass method" << std::endl;
         }
     };
 

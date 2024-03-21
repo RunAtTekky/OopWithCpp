@@ -1,15 +1,19 @@
 #include <iostream>
 #include <string>
+using namespace std;
 
 class Student {
 private:
-    std::string name;
-    std::string registrationNumber;
+    string name;
+    string reg;
 
 public:
     // Constructor to initialize name and registration number
-    Student(const std::string& name, const std::string& regNumber) : name(name), registrationNumber(regNumber) {
-        std::cout << "Constructor called." << std::endl;
+    Student(string name, string reg) {
+      this->name = name;
+      this->reg = reg;
+  
+      std::cout << "Constructor called." << std::endl;
     }
 
     // Destructor to clean up resources
@@ -20,7 +24,7 @@ public:
     // Function to print name and registration number
     void printDetails() {
         std::cout << "Name: " << name << std::endl;
-        std::cout << "Registration Number: " << registrationNumber << std::endl;
+        std::cout << "Registration Number: " << reg << std::endl;
     }
 };
 

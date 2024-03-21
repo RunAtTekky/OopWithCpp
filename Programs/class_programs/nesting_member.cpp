@@ -1,4 +1,5 @@
 #include <iostream>
+using namespace std;
 
 class OuterClass {
 private:
@@ -13,7 +14,7 @@ private:
         InnerClass(int data) : innerData(data) {}
 
         void displayInnerData() {
-            std::cout << "Inner data: " << innerData << std::endl;
+            cout << "Inner data: " << innerData << std::endl;
         }
     };
 

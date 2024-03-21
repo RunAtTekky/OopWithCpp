@@ -1,28 +1,32 @@
 #include <iostream>
 #include <string>
+using namespace std;
 
 class Student {
 private:
-    std::string name;
-    std::string registrationNumber;
+    string name;
+    string reg;
 
 public:
     // Constructor to initialize name and registration number
-    Student(const std::string& name, const std::string& regNumber) : name(name), registrationNumber(regNumber) {}
+    Student(string name, string reg) {
+      this->name = name;
+      this->reg = reg;
+    }
 
     // Function to print name and registration number
     void printDetails() {
-        std::cout << "Name: " << name << std::endl;
-        std::cout << "Registration Number: " << registrationNumber << std::endl;
+        cout << "Name: " << name << std::endl;
+        cout << "Registration Number: " << reg << std::endl;
     }
 };
 
 int main() {
     const int numStudents = 3; // Number of students
     Student students[numStudents] = {
-        Student("Student 1", "123"),
-        Student("Student 2", "456"),
-        Student("Student 3", "789")
+        Student("Varun", "22BCE10512"),
+        Student("Divy", "22BCE11433"),
+        Student("Sparsh", "22BCE10441")
     };
 
     // Printing details of each student
