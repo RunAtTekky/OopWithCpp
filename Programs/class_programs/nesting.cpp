@@ -7,7 +7,6 @@ public:
         cout << "OuterClass constructor" << "\n";
     }
 
-    // Inner class declaration
     class InnerClass {
     public:
         InnerClass() {
@@ -19,7 +18,6 @@ public:
         }
     };
 
-    // Method to use InnerClass
     void useInnerClass() {
         InnerClass inner;
         inner.innerMethod();

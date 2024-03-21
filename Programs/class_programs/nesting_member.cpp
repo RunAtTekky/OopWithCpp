@@ -5,13 +5,14 @@ class OuterClass {
 private:
     int outerData;
 
-    // Inner class declaration
     class InnerClass {
     private:
         int innerData;
 
     public:
-        InnerClass(int data) : innerData(data) {}
+        InnerClass(int data) {
+          innerData = data;
+        }
 
         void displayInnerData() {
             cout << "Inner data: " << innerData << "\n";
@@ -19,16 +20,18 @@ private:
     };
 
 public:
-    OuterClass(int data) : outerData(data) {}
+    OuterClass(int data) {
+      outerData = data;
+    }
 
     void useInnerClass() {
-        InnerClass inner(42); // Create an instance of InnerClass
+        InnerClass inner(42);
         inner.displayInnerData();
     }
 };
 
 int main() {
-    OuterClass outer(10); // Create an instance of OuterClass
+    OuterClass outer(10); 
     outer.useInnerClass();
 
     return 0;
