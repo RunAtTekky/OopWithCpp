@@ -16,8 +16,8 @@ public:
 
     // Function to print name and registration number
     void printDetails() {
-        cout << "Name: " << name << std::endl;
-        cout << "Registration Number: " << reg << std::endl;
+        cout << "Name: " << name << "\n";
+        cout << "Registration Number: " << reg << "\n";
     }
 };
 
@@ -31,9 +31,9 @@ int main() {
 
     // Printing details of each student
     for (int i = 0; i < numStudents; ++i) {
-        std::cout << "Details of Student " << i+1 << ":" << std::endl;
+        cout << "Details of Student " << i+1 << ":" << "\n";
         students[i].printDetails();
-        std::cout << std::endl;
+        cout << "\n";
     }
 
     return 0;

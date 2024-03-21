@@ -16,8 +16,8 @@ public:
 
     // Function to print name and registration number
     void printDetails() {
-        std::cout << "Name: " << name << std::endl;
-        std::cout << "Registration Number: " << reg << std::endl;
+        cout << "Name: " << name << "\n";
+        cout << "Registration Number: " << reg << "\n";
     }
 };
 

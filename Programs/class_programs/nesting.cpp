@@ -4,18 +4,18 @@ using namespace std;
 class OuterClass {
 public:
     OuterClass() {
-        cout << "OuterClass constructor" << std::endl;
+        cout << "OuterClass constructor" << "\n";
     }
 
     // Inner class declaration
     class InnerClass {
     public:
         InnerClass() {
-            cout << "InnerClass constructor" << std::endl;
+            cout << "InnerClass constructor" << "\n";
         }
 
         void innerMethod() {
-            cout << "InnerClass method" << std::endl;
+            cout << "InnerClass method" << "\n";
         }
     };
 

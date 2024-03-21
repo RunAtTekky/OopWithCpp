@@ -13,18 +13,18 @@ public:
       this->name = name;
       this->reg = reg;
   
-      std::cout << "Constructor called." << std::endl;
+      cout << "Constructor called." << "\n";
     }
 
     // Destructor to clean up resources
     ~Student() {
-        std::cout << "Destructor called." << std::endl;
+        cout << "Destructor called." << "\n";
     }
 
     // Function to print name and registration number
     void printDetails() {
-        std::cout << "Name: " << name << std::endl;
-        std::cout << "Registration Number: " << reg << std::endl;
+        cout << "Name: " << name << "\n";
+        cout << "Registration Number: " << reg << "\n";
     }
 };
 

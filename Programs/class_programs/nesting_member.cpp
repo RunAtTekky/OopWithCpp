@@ -14,7 +14,7 @@ private:
         InnerClass(int data) : innerData(data) {}
 
         void displayInnerData() {
-            cout << "Inner data: " << innerData << std::endl;
+            cout << "Inner data: " << innerData << "\n";
         }
     };
 
