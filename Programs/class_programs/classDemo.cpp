@@ -20,7 +20,10 @@ public:
 };
 
 int main() {
-  Student *varun = new Student("Varun Rawat", "22BCE10512");
+  cout << "Enter your name and registration number: " << "\n";
+  string name, reg;
+  cin >> name >> reg;
+  Student *varun = new Student(name,reg);
 
   varun->printDetails();
 

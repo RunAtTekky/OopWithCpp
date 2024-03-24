@@ -20,14 +20,13 @@ public:
 };
 
 int main() {
-    const int numStudents = 3;
-    Student students[numStudents] = {
+    Student students[3] = {
         Student("Varun", "22BCE10512"),
         Student("Divy", "22BCE11433"),
         Student("Sparsh", "22BCE10441")
     };
 
-    for (int i = 0; i < numStudents; ++i) {
+    for (int i = 0; i < 3; ++i) {
         cout << "Details of Student " << i+1 << ":" << "\n";
         students[i].printDetails();
         cout << "\n";
